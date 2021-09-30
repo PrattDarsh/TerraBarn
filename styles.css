@@ -1,0 +1,20 @@
+.cursive{
+    font-family: 'Fauna One', serif;
+}
+.serif{
+    font-family: 'Fauna One', serif;
+}
+
+.brown{
+    color: #42210B;
+}
+.bg-brown{
+    background-color: #42210B;
+}
+
+
+body{
+    /* background-color: #ffc8dd; */
+    /* font-family: 'Fauna One', serif; */
+    background-color: #FFE7C9;
+}

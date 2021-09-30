@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="overflow-x-hidden">
+    <div class="fixed top-0 z-50 w-full px-4 py-6 bg-white md:px-32 navBar">
+        <div class="fixed right-0 hidden w-3/4 h-screen px-8 py-12 text-black bg-white md:w-1/2" id="#menu">
+            <div class="">
+
+                <button class="" onclick="hideMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="hover:animate-rotate"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                    </svg>
+                </button>
+                <div class="py-32">
+                    <p class="pb-12 mt-12 text-5xl font-bold text-center border-b-2 border-black serif">Menu</p>
+                    <div class="mt-12 space-y-12 text-4xl text-center serif">
+                        <p class=""><a href="#section2"> About</a></p>
+                        <p class=""><a href="#section3">Products</a></p>
+                        <p class="">Contact</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="flex items-center justify-between">
+            <div class=""><img src="images/terrabarn.svg" class="h-8 md:h-12" alt=""></div>
+            <div class="flex space-x-4 md:space-x-12 brown serif">
+                <div class=""><a href="https://www.instagram.com/terrabarn2002/" target="_blank"> <svg
+                            xmlns="http://www.w3.org/2000/svg" class="brown" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M21.231 0h-18.462c-1.529 0-2.769 1.24-2.769 2.769v18.46c0 1.531 1.24 2.771 2.769 2.771h18.463c1.529 0 2.768-1.24 2.768-2.771v-18.46c0-1.529-1.239-2.769-2.769-2.769zm-9.231 7.385c2.549 0 4.616 2.065 4.616 4.615 0 2.549-2.067 4.616-4.616 4.616s-4.615-2.068-4.615-4.616c0-2.55 2.066-4.615 4.615-4.615zm9 12.693c0 .509-.413.922-.924.922h-16.152c-.511 0-.924-.413-.924-.922v-10.078h1.897c-.088.315-.153.64-.2.971-.05.337-.081.679-.081 1.029 0 4.079 3.306 7.385 7.384 7.385s7.384-3.306 7.384-7.385c0-.35-.031-.692-.081-1.028-.047-.331-.112-.656-.2-.971h1.897v10.077zm0-13.98c0 .509-.413.923-.924.923h-2.174c-.511 0-.923-.414-.923-.923v-2.175c0-.51.412-.923.923-.923h2.174c.511 0 .924.413.924.923v2.175z"
+                                fill-rule="evenodd" clip-rule="evenodd" />
+                        </svg></a></div>
+                <div class=""><button onclick="showMenu()"><svg xmlns="http://www.w3.org/2000/svg" class="brown"
+                            width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+                        </svg></button> </div>
+
+            </div>
+        </div>
+
+    </div>
+    <section class="px-4 py-32 md:px-32">
+
+        <div class="items-center justify-between md:flex">
+            <div class="">
+                <img src="images/2.jpeg" class="max-w-sm md:max-w-lg carousel" alt="">
+            </div>
+            <div class="">
+                <div class="max-w-2xl text-6xl serif header">
+                    Jewellery with the <i class="font-bold">warmth</i> of the Earth.
+                </div>
+                <div class="w-56 py-6 mt-8 text-lg text-center text-white bg-brown ctaBtn">
+                    <a href="#section3">Browse
+                        Collection</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="items-center justify-between py-32 bg-white md:space-x-32 md:px-32 md:flex" id="cta">
+
+        <div class="">
+            <div class="text-6xl text-left serif ctaTitle">Featured Collection</div>
+            <p class="max-w-md mt-4 ctaDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laborum
+                laboriosam
+                reprehenderit qui
+            </p>
+
+        </div>
+        </div>
+
+        <div class="md:space-x-4 md:flex cardDeck">
+            <div class="text-xl ">
+                <img src="images/2.jpeg" class="max-w-xs mb-2" alt="">
+                <div class="">
+                    <p>Product 1</p>
+                    <p class="text-sm">Rs 20</p>
+                </div>
+            </div>
+            <div class="text-xl ">
+                <img src="images/2.jpeg" class="max-w-xs mb-2" alt="">
+                <div class="">
+                    <p>Product 2</p>
+                    <p class="text-sm">Rs 20</p>
+                </div>
+            </div>
+            <div class="text-xl ">
+                <img src="images/2.jpeg" class="max-w-xs mb-2" alt="">
+                <div class="">
+                    <p>Product 3</p>
+                    <p class="text-sm">Rs 20</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 mx-auto max-w-7xl " id="section2">
+        <div class="absolute p-8 border-4 border-black rounded-full top-48 right-12 ball"></div>
+        <div class="flex items-center justify-center mb-12 space-x-12">
+            <div class="h-1 bg-brown w-72 leftLine1"></div>
+            <div class="text-5xl sec2header serif">The story of terrabarn.</div>
+            <div class="h-1 bg-brown w-72 rightLine1"></div>
+        </div>
+        <div class="grid-cols-2 grid-rows-4 gap-12 md:grid ">
+            <div class="">
+                <h2 class="mb-4 text-5xl cursive head1">Story-1</h2>
+                <div class="h-0.5 max-w-xs bg-black mb-4 line1"></div>
+                <p class="max-w-md text-xl para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, dolorum
+                    temporibus
+                    nulla numquam
+                    possimus explicabo magni voluptatem repellendus, autem reiciendis at voluptatum! Ab suscipit, sint
+                    atque laborum maiores dolor. Odio?</p>
+            </div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class="">
+                <h2 class="text-5xl cursive head2">Story-2</h2>
+                <div class="h-0.5 max-w-xs bg-black mb-4 line2"></div>
+                <p class="max-w-md text-xl para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, dolorum
+                    temporibus
+                    nulla numquam
+                    possimus explicabo magni voluptatem repellendus, autem reiciendis at voluptatum! Ab suscipit, sint
+                    atque laborum maiores dolor. Odio?</p>
+            </div>
+            <div class="">
+                <h2 class="text-5xl cursive head3">Story-3</h2>
+                <div class="h-0.5 max-w-xs bg-black mb-4 line3"></div>
+                <p class="max-w-md text-xl para3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, dolorum
+                    temporibus
+                    nulla numquam
+                    possimus explicabo magni voluptatem repellendus, autem reiciendis at voluptatum! Ab suscipit, sint
+                    atque laborum maiores dolor. Odio?</p>
+            </div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class="">
+                <h2 class="text-5xl cursive head4">Story-4</h2>
+                <div class="h-0.5 max-w-xs bg-black mb-4 line4"></div>
+                <p class="max-w-md text-xl para4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, dolorum
+                    temporibus
+                    nulla numquam
+                    possimus explicabo magni voluptatem repellendus, autem reiciendis at voluptatum! Ab suscipit, sint
+                    atque laborum maiores dolor. Odio?</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="py-12 mx-auto max-w-7xl" id="section3">
+        <div class="flex items-center justify-center  space-x-12">
+            <div class="h-1 bg-brown w-72 leftLine2"></div>
+            <div class="text-5xl sec3header serif">Our Latest Products.</div>
+            <div class="h-1 bg-brown w-72 rightLine2"></div>
+        </div>
+        <div class="grid gap-16 my-12 md:grid-cols-4">
+            <div class="text-xl prod ">
+                <img src="images/2.jpeg" class="max-w-xs mb-2 " alt="">
+                <div class="">
+                    <p>Product 1</p>
+                    <p class="text-sm">Rs 20</p>
+                </div>
+            </div>
+            <div class="text-xl prod ">
+                <img src="images/2.jpeg" class="max-w-xs mb-2 " alt="">
+                <div class="">
+                    <p>Product 1</p>
+                    <p class="text-sm">Rs 20</p>
+                </div>
+            </div>
+            <div class="text-xl prod ">
+                <img src="images/2.jpeg" class="max-w-xs mb-2 " alt="">
+                <div class="">
+                    <p>Product 1</p>
+                    <p class="text-sm">Rs 20</p>
+                </div>
+            </div>
+            <div class="text-xl prod ">
+                <img src="images/2.jpeg" class="max-w-xs mb-2 " alt="">
+                <div class="">
+                    <p>Product 1</p>
+                    <p class="text-sm">Rs 20</p>
+                </div>
+            </div>
+            <div class="text-xl prod ">
+                <img src="images/2.jpeg" class="max-w-xs mb-2 " alt="">
+                <div class="">
+                    <p>Product 1</p>
+                    <p class="text-sm">Rs 20</p>
+                </div>
+            </div>
+            <div class="text-xl prod ">
+                <img src="images/2.jpeg" class="max-w-xs mb-2 " alt="">
+                <div class="">
+                    <p>Product 1</p>
+                    <p class="text-sm">Rs 20</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script>
+        // ------------------landing---------------------------
+
+        gsap.from('.header', { opacity: 0, x: 100 })
+        gsap.from('.ctaBtn', { opacity: 0, y: 100 })
+        gsap.from('.carousel', { opacity: 0, x: -100 })
+        gsap.from('.navBar', { opacity: 0, y: -100 })
+
+        // ----------------------bestSellers-------------------------
+        let sellers = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#cta',
+                toggleActions: 'play none none pause',
+                pin: true,
+
+            }
+
+        })
+
+        sellers.from('.ctaTitle', { opacity: 0, x: -20 })
+            .from('.ctaDesc', { opacity: 0, y: 20 }, '-=0.5')
+            .from('.cardDeck', { opacity: 0, x: 20 }, '-=0.5')
+
+        // ----------------------story-------------------------
+        let story = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#section2',
+                toggleActions: 'play none none pause',
+                pin: true,
+                scrub: 3,
+
+            }
+        })
+
+        story.from('.sec2header', { opacity: 0, onComplete: () => bgPurle() })
+            .from('.leftLine1', { opacity: 0, x: -20, ease: 'bounce' }, '-=0.7')
+            .from('.rightLine1', { opacity: 0, x: 20, ease: 'bounce' }, '-=0.7')
+            .from('.ball', { opacity: 0, y: -20, ease: 'bounce' })
+            .from('.line1', { opacity: 0, duration: 0.7, })
+            .from('.head1', { opacity: 0, y: 20, duration: 0.7, ease: 'elastic' })
+            .from('.para1', { opacity: 0, y: -20, duration: 0.7, ease: 'bounce' }, '-=0.7')
+            .to('.ball', { y: 300, ease: 'bounce.out' })
+            .from('.line2', { opacity: 0, duration: 0.7, })
+            .from('.head2', { opacity: 0, y: 20, duration: 0.7, ease: 'elastic' })
+            .from('.para2', { opacity: 0, y: -20, duration: 0.7, ease: 'bounce' }, '-=0.7')
+            .to('.ball', { y: 600, ease: 'bounce.out' })
+            .from('.line3', { opacity: 0, duration: 0.7, })
+            .from('.head3', { opacity: 0, y: 20, duration: 0.7, ease: 'elastic' })
+            .from('.para3', { opacity: 0, y: -20, duration: 0.7, ease: 'bounce' }, '-=0.7')
+            .to('.ball', { y: 900, ease: 'bounce.out' })
+            .from('.line4', { opacity: 0, duration: 0.7, })
+            .from('.head4', { opacity: 0, y: 20, duration: 0.7, ease: 'elastic' })
+            .from('.para4', { opacity: 0, y: -20, duration: 0.7, ease: 'bounce', onComplete: () => products.play() }, '-=0.7')
+
+        function bgPurle() {
+            document.body.style.transition = 'all 1s'
+            document.body.classList.toggle('bg-indigo-100')
+        }
+
+        // ----------------------products-------------------------
+        // let products = gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: '#section3',
+        //         toggleActions: 'play none none pause',
+        //         pin: true,
+        //         scrub: true
+        //     }
+        // })
+        let products = gsap.timeline().pause()
+        products.from('.sec3header', { opacity: 0, onComplete: () => bgGreen() })
+            .from('.leftLine2', { opacity: 0, x: -20, ease: 'bounce' }, '-=0.7')
+            .from('.rightLine2', { opacity: 0, x: 20, ease: 'bounce' }, '-=0.7')
+            .from('.prod', { opacity: 0, y: 100, ease: 'bounce', stagger: 0.1 }, '-=0.7')
+
+
+        function bgGreen() {
+            document.body.style.transition = 'all 1s'
+            document.body.classList.remove('bg-indigo-100')
+            document.body.classList.add('bg-green-100')
+        }
+
+
+        // ----------------------------MENU---------------------------------------------
+        function showMenu() {
+            document.getElementById('#menu').classList.remove('hidden')
+            menu.play()
+        }
+
+        function hideMenu() {
+
+            menu.reverse()
+            document.getElementById('#menu').classList.add('hidden')
+        }
+        let menu = gsap.timeline().pause()
+
+        menu.from('#menu', { opacity: 0, x: 200, ease: "power4.inOut" })
+
+    </script>
+</body>
+
+</html>
