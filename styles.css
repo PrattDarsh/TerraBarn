@@ -3,6 +3,7 @@
 }
 .serif{
     font-family: 'Fauna One', serif;
+
 }
 
 .brown{
@@ -15,6 +16,6 @@
 
 body{
     /* background-color: #ffc8dd; */
-    /* font-family: 'Fauna One', serif; */
+    font-family: 'Poppins', sans-serif;
     background-color: #FFE7C9;
 }
