@@ -12,10 +12,25 @@
 .bg-brown{
     background-color: #42210B;
 }
-
+.bg-lightBrown{
+    background-color:#ddb892;
+}
+.bg-darkBrown{
+    background-color: #582f0e;
+}
 
 body{
     /* background-color: #ffc8dd; */
     font-family: 'Poppins', sans-serif;
-    background-color: #FFE7C9;
+
+    /* background-color: #ddb892; */
+}
+
+
+.satisfy{
+    font-family: 'Satisfy', cursive;
+}
+
+.lightBrown{
+    color:#ddb892;
 }
