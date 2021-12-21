@@ -16,22 +16,28 @@
 
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    html {
+        overflow-x: hidden;
+    }
 
-<body class="overflow-x-hidden">
-    <div class="fixed top-0 z-50 w-full px-4 py-6 bg-white md:px-32 navBar">
-        <div class="fixed right-0 hidden w-3/4 h-screen px-8 py-12 text-black bg-white md:w-1/2" id="#menu">
+</style>
+
+<body>
+    <div class="fixed top-0 z-50 w-full px-4 py-6 md:px-32 navBar ">
+        <div class="fixed hidden px-8 text-black bg-white right-32 top-24 rounded-xl" id="#menu">
             <div class="">
 
-                <button class="" onclick="hideMenu()">
+                <button class="mt-4" onclick="hideMenu()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="hover:animate-rotate"
                         viewBox="0 0 24 24">
                         <path
                             d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
                     </svg>
                 </button>
-                <div class="py-32">
-                    <p class="pb-12 mt-12 text-5xl font-bold text-center border-b-2 border-black serif">Menu</p>
-                    <div class="mt-12 space-y-12 text-4xl text-center serif">
+                <div class="">
+
+                    <div class="my-12 space-y-12 text-4xl text-center serif">
                         <p class=""><a href="#section2"> About</a></p>
                         <p class=""><a href="#section3">Products</a></p>
                         <p class=""><a href="#contact">Contact</a></p>
@@ -42,25 +48,27 @@
             </div>
         </div>
         <div class="flex items-center justify-between">
-            <div class=""><img src="images/terrabarn.svg" class="h-6 md:h-8" alt=""></div>
+            <div class=""><img src="images/terrabarn.svg" class="h-6 md:h-8" alt="" id="logo"></div>
             <div class="flex space-x-4 md:space-x-12 brown serif">
                 <div class=""><a href="https://www.instagram.com/terrabarn2002/" target="_blank"> <svg
-                            xmlns="http://www.w3.org/2000/svg" class="brown" width="24" height="24" viewBox="0 0 24 24">
+                            xmlns="http://www.w3.org/2000/svg" class="fill-current brown socials" width="24" height="24"
+                            viewBox="0 0 24 24">
                             <path
                                 d="M21.231 0h-18.462c-1.529 0-2.769 1.24-2.769 2.769v18.46c0 1.531 1.24 2.771 2.769 2.771h18.463c1.529 0 2.768-1.24 2.768-2.771v-18.46c0-1.529-1.239-2.769-2.769-2.769zm-9.231 7.385c2.549 0 4.616 2.065 4.616 4.615 0 2.549-2.067 4.616-4.616 4.616s-4.615-2.068-4.615-4.616c0-2.55 2.066-4.615 4.615-4.615zm9 12.693c0 .509-.413.922-.924.922h-16.152c-.511 0-.924-.413-.924-.922v-10.078h1.897c-.088.315-.153.64-.2.971-.05.337-.081.679-.081 1.029 0 4.079 3.306 7.385 7.384 7.385s7.384-3.306 7.384-7.385c0-.35-.031-.692-.081-1.028-.047-.331-.112-.656-.2-.971h1.897v10.077zm0-13.98c0 .509-.413.923-.924.923h-2.174c-.511 0-.923-.414-.923-.923v-2.175c0-.51.412-.923.923-.923h2.174c.511 0 .924.413.924.923v2.175z"
                                 fill-rule="evenodd" clip-rule="evenodd" />
                         </svg></a></div>
                 <div class="">
                     <a href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" class="fill-current brown socials"
+                            height="24" viewBox="0 0 24 24">
                             <path
                                 d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
                         </svg>
                     </a>
 
                 </div>
-                <div class=""><button onclick="showMenu()"><svg xmlns="http://www.w3.org/2000/svg" class="brown"
-                            width="24" height="24" viewBox="0 0 24 24">
+                <div class=""><button onclick="showMenu()"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="fill-current brown socials" width="24" height="24" viewBox="0 0 24 24">
                             <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
                         </svg></button> </div>
 
@@ -68,170 +76,207 @@
         </div>
 
     </div>
-    <section class="px-4 pt-32  md:px-32 bg-lightBrown">
+    <section class="px-4 md:px-32 bg-lightBrown landing">
 
-        <div class="items-center justify-between space-x-12 md:flex max-w-7xl mx-auto">
-            <div class="">
-                <img src="images/2.jpeg" class="max-w-sm md:max-w-lg carousel" alt="">
+        <div class="items-center justify-center mx-auto space-x-12 md:flex">
+            <div class="relative">
+                <div class="px-6 pt-6 pb-12 text-xl transform bg-white shadow-xl prod rotate-6 ">
+                    <img src="images/prod1.jfif" class="mb-2 md:max-w-sm" alt="">
+                    <div class="text-center">
+                        <p class="font-bold serif">Product 3</p>
+                        <p class="text-sm">Rs 20</p>
+                    </div>
+                </div>
+                <div
+                    class="absolute px-6 pt-6 pb-12 text-xl transform bg-white shadow-xl top-12 left-12 prod -rotate-6 mobileCard2">
+                    <img src="images/prod5.jfif" class="mb-2 md:max-w-sm" alt="">
+                    <div class="text-center">
+                        <p class="font-bold serif">Product 3</p>
+                        <p class="text-sm">Rs 20</p>
+                    </div>
+                </div>
+                <div
+                    class="absolute px-6 pt-6 pb-12 text-xl transform bg-white shadow-xl top-12 right-32 prod rotate-6 mobileCard">
+                    <img src="images/prod6.jfif" class="mb-2 md:max-w-sm" alt="">
+                    <div class="text-center">
+                        <p class="font-bold serif">Product 3</p>
+                        <p class="text-sm">Rs 20</p>
+                    </div>
+                </div>
             </div>
+
             <div class="">
-                <div class="max-w-2xl mt-4 text-4xl md:text-6xl serif header">
+                <div class="max-w-2xl mt-4 text-4xl md:text-6xl serif header ">
                     Jewellery with the <i class="text-5xl font-bold satisfy md:text-7xl">warmth</i> of the Earth.
                 </div>
-                <div class="w-56 py-6 mt-8 text-lg text-center text-white rounded-md bg-brown ctaBtn">
-                    <a href="#section3">Browse
-                        Collection</a>
-                </div>
-            </div>
 
+            </div>
+            <!-- <div class="px-6 pt-6 pb-12 text-xl transform bg-white shadow-xl prod -rotate-6 md:absolute -left-32">
+                <img src="images/prod2.jfif" class="max-w-sm mb-2" alt="">
+                <div class="text-center">
+                    <p class="font-bold serif">Product 3</p>
+                    <p class="text-sm">Rs 20</p>
+                </div>
+            </div> -->
         </div>
 
     </section>
-    <section>
+    <section id="sec2">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#ddb892" fill-opacity="1"
                 d="M0,160L60,181.3C120,203,240,245,360,256C480,267,600,245,720,202.7C840,160,960,96,1080,112C1200,128,1320,224,1380,272L1440,320L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
             </path>
         </svg>
-        <div class="items-center justify-between px-4 bg-white  md:flex max-w-7xl mx-auto">
+        <div class="py-12 text-2xl text-center md:text-4xl">
 
-            <div class="max-w-lg">
-                <div class="text-left ctaTitle"><span class="text-6xl satisfy">Featured Collection</span><br>Lorem
-                    ipsum
-                    dolor sit amet
-                    consectetur adipisicing elit. Aliquid
-                    laborum
-                    laboriosam
-                    reprehenderit qui</div>
 
+            <div class="flex items-center justify-center mb-2 space-x-4 text-xl font-bold uppercase">
+                <div class="w-32 h-px bg-brown line2"></div>
+                <div class="">What we do</div>
+                <div class="w-32 h-px bg-brown line2"></div>
+            </div>
+            <div class="max-w-4xl mx-auto leading-relaxed serif whatwedo">We endeavour to re-establish our connection
+                with <span class="text-3xl font-bold md:text-5xl satisfy brown">mother Earth</span> through our
+                handcrafted
+                products that
+                enhance
+                <span class="text-3xl font-bold md:text-5xl satisfy brown">beauty and
+                    wellbeing.</span>
             </div>
 
 
 
 
-            <div class="space-y-12 md:space-x-4 md:flex cardDeck md:space-y-0">
-                <div class="text-xl ">
-                    <img src="images/2.jpeg" class="mb-2 md:max-w-xs" alt="">
-                    <div class="">
-                        <p>Product 1</p>
-                        <p class="text-sm">Rs 20</p>
-                    </div>
-                </div>
-                <div class="text-xl ">
-                    <img src="images/2.jpeg" class="mb-2 md:max-w-xs" alt="">
-                    <div class="">
-                        <p>Product 2</p>
-                        <p class="text-sm">Rs 20</p>
-                    </div>
-                </div>
 
-            </div>
+
+
         </div>
     </section>
 
-    <section class="" id="section2">
+    <section class="" id="sec3">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#42210B" fill-opacity="1"
                 d="M0,64L60,74.7C120,85,240,107,360,112C480,117,600,107,720,101.3C840,96,960,96,1080,106.7C1200,117,1320,139,1380,149.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
             </path>
         </svg>
 
-        <div class="px-4 space-y-32  md:px-32 bg-brown">
+        <div class="px-4 space-y-32 md:px-32 bg-brown">
             <div class="flex items-center justify-center space-x-12 bg-brown">
-                <div class="w-12 h-1 bg-white md:w-72 leftLine1"></div>
-                <div class="text-4xl text-center text-white md:text-5xl sec2header satisfy">The story of terrabarn.
+                <div class="w-12 h-px bg-white md:w-72 storyLine"></div>
+                <div class="text-4xl text-center text-white md:text-5xl sec2header satisfy">The story of Terrabarn.
                 </div>
-                <div class="w-12 h-1 bg-white md:w-72 rightLine1"></div>
+                <div class="w-12 h-px bg-white md:w-72 storyLine"></div>
             </div>
 
-            <div class="items-center max-w-4xl md:flex">
-                <p class="max-w-md text-xl leading-loose text-left text-white">Terra Barn a <span
-                        class="text-2xl lightBrown  tracking-widest satisfy">cottage industry</span>,
-                    in the year
-                    2002 was
-                    established to
-                    revive
-                    the
-                    traditional art of Terracotta into contemporary jewellery form that hand manufactures <span
-                        class="text-2xl lightBrown tracking-widest satisfy">ethnic terracotta
-                        jewellery</span>, which supplies to local, national and international clients.</p>
-                <p class="right-0 font-bold tracking-widest lightBrown text-7xl satisfy top-32">Origin</p>
+            <div class="items-center max-w-4xl md:flex" id="part1">
+                <div class="">
+                    <p class="max-w-md mb-4 text-4xl font-bold tracking-widest md:text-5xl satisfy lightBrown story5">
+                        Origin
+                    </p>
+                    <p class="max-w-md text-xl leading-loose text-left text-white story1">TerraBarn a <span
+                            class="text-2xl tracking-widest lightBrown satisfy">cottage industry</span>,
+                        in the year
+                        2002 was
+                        established to
+                        revive
+                        the
+                        traditional art of Terracotta into contemporary jewellery form that hand manufactures <span
+                            class="text-2xl tracking-widest lightBrown satisfy">ethnic terracotta
+                            jewellery</span>, which supplies to local, national and international markets.</p>
+                </div>
+
+                <p class="right-0 text-4xl font-bold tracking-widest lightBrown satisfy top-32 pin1"></p>
             </div>
-            <div class="items-center justify-end space-x-12 md:flex">
-                <p class="top-0 font-bold lightBrown text-7xl satisfy">Poornima</p>
-                <p class="max-w-md text-xl leading-loose text-white ">Terra Barn was founded by <span
-                        class="text-2xl tracking-widest lightBrown satisfy">Poornima
-                        S Prasad</span> , a social entrepreneur, Trainer and a certified Artisan from RDTDC, (Regional
-                    Design and
-                    Technical Development Centre,
-                    Govt. of India).</p>
+            <div class="items-center justify-end space-x-12 md:flex" id="part2">
+                <div class="">
+                    <p class="max-w-md mb-4 text-4xl font-bold tracking-widest md:text-5xl satisfy lightBrown story5">
+                        Poornima
+                    </p>
+                    <p class="max-w-md text-xl leading-loose text-white story2">TerraBarn was founded by <span
+                            class="text-2xl tracking-widest lightBrown satisfy">Poornima
+                        </span> , a social entrepreneur, Trainer and a certified Artisan from RDTDC, (Regional
+                        Design and
+                        Technical Development Centre,
+                        Govt. of India).</p>
+
+                </div>
+                <p class="top-0 text-4xl font-bold lightBrown md:text-5xl satisfy pin2"></p>
 
 
 
 
             </div>
-            <div class="items-center max-w-4xl md:flex">
-                <p class="max-w-md mx-auto text-xl leading-loose text-white ">Terra Barn provides income
-                    generation opportunities to <span class="text-2xl lightBrown tracking-widest satisfy">marginalised
+            <div class="items-center max-w-4xl md:flex" id="part3">
+                <p class="max-w-md mx-auto text-xl leading-loose text-white story3">TerraBarn provides income
+                    generation opportunities to <span class="text-2xl tracking-widest lightBrown satisfy">marginalised
                         women</span> by training them in the art of terracotta jewellery
                     making and support  in marketing which works towards <span
-                        class="text-2xl lightBrown  tracking-widest satisfy">sustainable livelihood</span>. Several
+                        class="text-2xl tracking-widest lightBrown satisfy">sustainable livelihood</span>. Several
                     women
                     who
                     work at
-                    Terra Barn have learnt this art and they are now <span
-                        class="text-2xl lightBrown tracking-widest satisfy">economically independent</span>. They  work
+                    TerraBarn have learnt this art and they are now <span
+                        class="text-2xl tracking-widest lightBrown satisfy">economically independent</span>. They  work
                     close
                     to their
                     homes and able to financially support their families.</p>
-                <img src="images/woman_white.svg" class="max-w-xs" alt="">
+                <img src="images/woman_white.svg" class="max-w-xs pin3" alt="">
             </div>
-            <div class="justify-end space-x-12 md:flex">
-                <p class="top-0 font-bold lightBrown text-7xl satisfy">Connections</p>
-                <p class="max-w-md text-xl leading-loose text-white ">Terra Barn was a part of Launch Pad 8 of NSRCEL,
-                    an
-                    IIMB initiative.
-                    Terra Barn is listed as <span class="text-2xl lightBrown  tracking-widest satisfy">official
-                        artisan</span>
-                    with <span class="font-bold">CCIC</span> – <span
-                        class="text-2xl lightBrown  tracking-widest satisfy">Central Cottage Industries</span>,
-                    <span class="font-bold">CCI</span> – <span
-                        class="text-2xl lightBrown  tracking-widest satisfy">Craft
-                        Council of Tamil Nadu and GoCoop
-                        Solutions & Services Pvt Ltd.</span>
-                    Terra Barn also partners with various brands as customer, tie-up with handicrafts / sales outlets
-                    like,
-                    <span class="text-2xl lightBrown  tracking-widest satisfy">Kodava Handicrafts</span> at Coorg and
-                    Individuals who participate at exhibitions.
-                </p>
-
-
-
-
-            </div>
-            <div class="items-center max-w-4xl space-x-12 md:flex">
+            <div class="justify-end space-x-12 md:flex" id="part4">
                 <div class="">
-                    <p class="max-w-md font-bold tracking-widest text-7xl satisfy lightBrown">About the founder</p>
-                    <p class="max-w-2xl mx-auto text-xl leading-loose text-white ">An artist herself, Poornima loves to
+                    <p class="max-w-md mb-4 text-4xl font-bold tracking-widest md:text-5xl satisfy lightBrown story5">
+                        Connections</p>
+                    <p class="max-w-md text-xl leading-loose text-white story4">TerraBarn was a part of Launch Pad 8 of
+                        NSRCEL,
+                        an
+                        IIMB initiative.
+                        TerraBarn is listed as <span class="text-2xl tracking-widest lightBrown satisfy">official
+                            artisan</span>
+                        with <span class="font-bold">CCIC</span> – <span
+                            class="text-2xl tracking-widest lightBrown satisfy">Central Cottage Industries</span>,
+                        <span class="font-bold">CCI</span> – <span
+                            class="text-2xl tracking-widest lightBrown satisfy">Craft
+                            Council of Tamil Nadu and GoCoop
+                            Solutions & Services Pvt Ltd.</span>
+                        TerraBarn also partners with various brands as customer, tie-up with handicrafts / sales outlets
+                        like,
+                        <span class="text-2xl tracking-widest lightBrown satisfy">Kodava Handicrafts</span> and
+                        Individuals who participate at exhibitions.
+                    </p>
+                </div>
+                <p class="top-0 text-4xl font-bold lightBrown satisfy pin4 md:text-5xl"></p>
+
+
+
+
+
+            </div>
+            <div class="items-center max-w-4xl space-x-12 md:flex" id="part5">
+                <div class="">
+                    <p class="max-w-md mb-4 text-4xl font-bold tracking-widest md:text-5xl satisfy lightBrown story5">
+                        About
+                        the founder
+                    </p>
+                    <p class="max-w-2xl mx-auto text-xl leading-loose text-white story5">An artist herself, Poornima
+                        loves to
                         create
-                        <span class="text-2xl lightBrown  tracking-widest satisfy">beautiful rustic pieces from
+                        <span class="text-2xl tracking-widest lightBrown satisfy">beautiful rustic pieces from
                             clay</span>
                         and is passionate about reaching out to more artists and
                         popularising
-                        this art. With over <span class="text-2xl lightBrown  tracking-widest satisfy">15 years</span>
+                        this art. With over <span class="text-2xl tracking-widest lightBrown satisfy">15 years</span>
                         of
-                        experience in the field, Poornima is a<span
-                            class="text-2xl lightBrown  tracking-widest satisfy">
+                        experience in the field, Poornima is a<span class="text-2xl tracking-widest lightBrown satisfy">
                             master crafts</span> person and a
                         trainer in terracotta jewellery making and has worked tirelessly to provide vocational training
                         and
                         livelihood opportunities to <span
-                            class="text-2xl lightBrown  tracking-widest satisfy">economically
+                            class="text-2xl tracking-widest lightBrown satisfy">economically
                             marginalized women.</span>
                     </p>
                 </div>
 
-                <div class="px-4 pt-6 pb-16 transform bg-white rotate-12 h-96 w-72">
+                <div class="px-4 pt-6 pb-16 transform bg-white shadow-xl rotate-12 h-96 w-72 pin5">
                     <div class="h-full bg-black"></div>
                 </div>
             </div>
@@ -247,29 +292,50 @@
         </svg>
         <div class="px-4 mx-auto max-w-7xl " id="section3">
             <div class="flex items-center justify-center md:space-x-12">
-                <div class="w-12 h-1 bg-brown md:w-72 leftLine2"></div>
+                <div class="w-12 h-px bg-brown md:w-72 leftLine2"></div>
                 <div class="text-4xl text-center md:text-5xl sec3header satisfy">Our Latest Products.</div>
-                <div class="w-12 h-1 bg-brown md:w-72 rightLine2"></div>
+                <div class="w-12 h-px bg-brown md:w-72 rightLine2"></div>
             </div>
-            <div class="grid gap-16 md:grid-cols-3 mt-12">
-                <div class="text-xl prod">
-                    <img src="images/2.jpeg" class="mb-2 " alt="">
+            <div class="grid mt-12 gap-y-6 gap-x-20 md:grid-cols-3">
+                <div class="px-6 pt-6 pb-12 text-xl transform bg-white shadow-xl md:mb-32 rotate-6 prod">
+                    <img src="images/prod3.jfif" class="mb-2 " alt="">
                     <div class="text-center">
                         <p class="font-bold serif">Product 1</p>
                         <p class="text-sm">Rs 20</p>
                     </div>
                 </div>
-                <div class="text-xl prod">
-                    <img src="images/2.jpeg" class="mb-2 " alt="">
+                <div class="px-6 pt-6 pb-12 text-xl transform bg-white shadow-xl md:mt-32 prod -rotate-6">
+                    <img src="images/prod4.jfif" class="mb-2 " alt="">
                     <div class="text-center">
                         <p class="font-bold serif">Product 2</p>
                         <p class="text-sm">Rs 20</p>
                     </div>
                 </div>
-                <div class="text-xl prod">
-                    <img src="images/2.jpeg" class="mb-2 " alt="">
+                <div class="px-6 pt-6 pb-12 text-xl transform bg-white shadow-xl prod rotate-6">
+                    <img src="images/prod5.jfif" class="mb-2 " alt="">
                     <div class="text-center">
                         <p class="font-bold serif">Product 3</p>
+                        <p class="text-sm">Rs 20</p>
+                    </div>
+                </div>
+                <div class="px-6 pt-6 pb-12 text-xl transform bg-white shadow-xl md:mb-32 prod -rotate-6">
+                    <img src="images/prod6.jfif" class="mb-2 " alt="">
+                    <div class="text-center">
+                        <p class="font-bold serif">Product 4</p>
+                        <p class="text-sm">Rs 20</p>
+                    </div>
+                </div>
+                <div class="px-6 pt-6 pb-12 text-xl transform bg-white shadow-xl md:mt-32 prod rotate-6">
+                    <img src="images/prod1.jfif" class="mb-2 " alt="">
+                    <div class="text-center">
+                        <p class="font-bold serif">Product 4</p>
+                        <p class="text-sm">Rs 20</p>
+                    </div>
+                </div>
+                <div class="px-6 pt-6 pb-12 text-xl transform bg-white shadow-xl md:mb-32 prod -rotate-6">
+                    <img src="images/prod2.jfif" class="mb-2 " alt="">
+                    <div class="text-center">
+                        <p class="font-bold serif">Product 4</p>
                         <p class="text-sm">Rs 20</p>
                     </div>
                 </div>
@@ -337,30 +403,67 @@
     <script>
         // ------------------landing---------------------------
 
-        gsap.from('.header', { opacity: 0, x: 100 })
-        gsap.from('.ctaBtn', { opacity: 0, y: 100 })
-        gsap.from('.carousel', { opacity: 0, x: -100 })
-        gsap.from('.navBar', { opacity: 0, y: -100 })
+        gsap.from('.header', { opacity: 0, x: 30 })
+        gsap.from('.ctaBtn', { opacity: 0, y: 30 })
+        gsap.from('.carousel', { opacity: 0, x: -30 })
+        gsap.from('.navBar', { opacity: 0, y: -30 })
+        gsap.from('.mobileCard', { x: 30, rotate: 45 })
+        gsap.from('.mobileCard2', { x: -30, rotate: 45 })
 
-        // ----------------------bestSellers-------------------------
-        let sellers = gsap.timeline({
+        // ----------------------cards-------------------------
+        let cards = gsap.timeline({
             scrollTrigger: {
-                trigger: '#cta',
+                trigger: '.landing',
+                start: 'top top',
                 toggleActions: 'play none none pause',
-                scrub: true,
-
+                scrub: true
             }
-
         })
 
-        sellers.from('.ctaTitle', { x: -100 })
-            .from('.ctaDesc', { y: 100 }, '-=0.5')
-            .from('.cardDeck', { x: 100 }, '-=0.5')
+        cards.to('.mobileCard', { y: 400, rotate: -10 }, '-=1')
+            .to('.mobileCard2', { y: 200, rotate: 10 }, '-=1')
 
-        // ----------------------story-------------------------
-        let story = gsap.timeline({
+
+        // ----------------------sec2-------------------------
+        let sec2 = gsap.timeline({
             scrollTrigger: {
-                trigger: '#section2',
+                trigger: '#sec2',
+                start: 'top center',
+                toggleActions: 'play none none pause',
+                scrub: true
+            }
+        })
+
+        sec2.from('.line2', { scale: 0 })
+            .from('.whatwedo', { x: 30 }, '-=0.5')
+        // ----------------------story-------------------------
+        // let story = gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: '.sec2header',
+        //         start: 'top center',
+        //         toggleActions: 'play none none pause',
+        //         // pin: true,
+        //         scrub: true,
+
+        //     }
+        // })
+
+        // story.from('.sec2header', { opacity: 0, duration: 5 }, '-=0.7')
+        //     .from('.leftLine1', { scale: 0, duration: 5 }, '-=0.7')
+        //     .from('.rightLine1', { scale: 0, duration: 5 }, '-=0.7')
+        //     .from('.pin1', { scale: 2, duration: 5 }, '+=2')
+        //     .from('.story1', { x: 30, opacity: 0, duration: 5 }, '-=0.5')
+        //     .from('.pin2', { scale: 2 },)
+        //     .from('.story2', { x: 30, opacity: 0 }, '-=0.5')
+        //     .from('.pin3', { scale: 2 },)
+        //     .from('.story3', { x: 30, opacity: 0 }, '-=0.5')
+        //     .from('.pin4', { scale: 2 },)
+        //     .from('.story4', { x: 30, opacity: 0 }, '-=0.5')
+
+        let sec3 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#sec3',
+                start: 'top top',
                 toggleActions: 'play none none pause',
                 // pin: true,
                 scrub: true,
@@ -368,27 +471,50 @@
             }
         })
 
-        story.from('.sec2header', { opacity: 0 })
-            .from('.leftLine1', { opacity: 0, x: -20, ease: 'bounce' }, '-=0.7')
-            .from('.rightLine1', { opacity: 0, x: 20, ease: 'bounce' }, '-=0.7')
-            .from('.ball', { opacity: 0, y: -20, ease: 'bounce' })
-            .from('.line1', { opacity: 0, duration: 0.7, })
-            .from('.head1', { opacity: 0, y: 20, duration: 0.7, ease: 'elastic' })
-            .from('.para1', { opacity: 0, y: -20, duration: 0.7, ease: 'bounce' }, '-=0.7')
-            .to('.ball', { y: 300, ease: 'bounce.out' })
-            .from('.line2', { opacity: 0, duration: 0.7, })
-            .from('.head2', { opacity: 0, y: 20, duration: 0.7, ease: 'elastic' })
-            .from('.para2', { opacity: 0, y: -20, duration: 0.7, ease: 'bounce' }, '-=0.7')
-            .to('.ball', { y: 600, ease: 'bounce.out' })
-            .from('.line3', { opacity: 0, duration: 0.7, })
-            .from('.head3', { opacity: 0, y: 20, duration: 0.7, ease: 'elastic' })
-            .from('.para3', { opacity: 0, y: -20, duration: 0.7, ease: 'bounce' }, '-=0.7')
-            .to('.ball', { y: 900, ease: 'bounce.out' })
-            .from('.line4', { opacity: 0, duration: 0.7, })
-            .from('.head4', { opacity: 0, y: 20, duration: 0.7, ease: 'elastic' })
-            .from('.para4', { opacity: 0, y: -20, duration: 0.7, ease: 'bounce', }, '-=0.7')
+
+        sec3.from('.storyLine', { scale: 0, onStart: () => bgPaper() })
+
+        function bgPaper() {
+
+            document.getElementById('logo').src = "images/terrabarnWatermark.png"
+            var socials = document.getElementsByClassName('socials')
+            for (var i = 0; i < socials.length; i++) {
+                socials[i].classList.remove('brown')
+                socials[i].classList.add('text-white')
+            }
+        }
+
+        let story = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#part1',
+                start: 'center center',
+                toggleActions: 'play none none pause',
+                // pin: true,
+                scrub: true,
+
+            }
+        })
+
+        story.to('.pin1', { y: 30, })
+            .from('.story1', { x: 30, opacity: 0 }, '-=0.5')
+            .from('.pin2', { scale: 2, })
+            .from('.story2', { x: -30, opacity: 0 }, '-=0.5')
 
 
+        let story2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#part3',
+                start: 'top center',
+                toggleActions: 'play none none pause',
+                // pin: true,
+                scrub: true,
+
+            }
+        })
+        story2.from('.pin3', { opacity: 0, rotate: 30 },)
+            .from('.story3', { x: 30, opacity: 0 }, '-=0.5')
+            .from('.pin4', { scale: 2 },)
+            .from('.story4', { x: 30, opacity: 0 }, '-=0.5')
 
 
         // ----------------------products-------------------------
@@ -429,7 +555,7 @@
         }
         let menu = gsap.timeline().pause()
 
-        menu.from('#menu', { opacity: 0, x: 200, ease: "power4.inOut" })
+        menu.from('#menu', { opacity: 0, x: 30, ease: "power4.inOut" })
 
     </script>
 </body>
