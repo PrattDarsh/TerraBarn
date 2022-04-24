@@ -168,7 +168,7 @@
                     <p class="max-w-md mb-4 text-4xl font-bold tracking-widest md:text-5xl satisfy lightBrown story5">
                         Origin
                     </p>
-                    <p class="max-w-md text-xl leading-loose text-left text-white story1">TerraBarn a <span
+                    <p class="max-w-md text-xl leading-loose text-left text-white story1 mb-6">TerraBarn a <span
                             class="text-2xl tracking-widest lightBrown satisfy">cottage industry</span>,
                         in the year
                         2002 was
@@ -203,7 +203,8 @@
 
             </div>
             <div class="items-center max-w-4xl md:flex" id="part3">
-                <p class="max-w-md mx-auto text-xl leading-loose text-white story3 space-x-6">TerraBarn provides income
+                <p class="max-w-md mx-auto text-xl leading-loose text-white story3 space-x-6 mb-8">TerraBarn provides
+                    income
                     generation opportunities to <span class="text-2xl tracking-widest lightBrown satisfy">marginalised
                         women</span> by training them in the art of terracotta jewellery
                     making and support  in marketing which works towards <span
@@ -217,7 +218,7 @@
                     to their
                     homes and able to financially support their families.</p>
                 <div class="bg-white pt-4 pb-12 px-4 pin3 transform rotate-12">
-                    <img src="images/work.JPG" class="max-w-md " alt="">
+                    <img src="images/work.JPG" class="max-w-xs md:max-w-md " alt="">
                 </div>
 
             </div>
@@ -533,8 +534,12 @@
             }
         })
 
-        cards.to('.mobileCard', { y: 400, rotate: 10 }, '-=1')
-            .to('.mobileCard2', { y: 200, rotate: -10 }, '-=1')
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (!isMobile) {
+            cards.to('.mobileCard', { y: 400, rotate: 10 }, '-=1')
+                .to('.mobileCard2', { y: 200, rotate: -10 }, '-=1')
+        }
+
 
 
         // ----------------------sec2-------------------------
