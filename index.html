@@ -82,7 +82,7 @@
             <div class="relative">
                 <div
                     class="px-6 pt-6 pb-20 text-xl w-72 md:w-full  transform bg-white shadow-xl prod rotate-6 mobileCard2">
-                    <img src="images/making1.jpg" class="mb-2 md:max-w-sm" alt="">
+                    <img src="images/making4.jpeg" class="mb-2 md:max-w-sm" alt="">
                 </div>
                 <!-- <div
                     class="absolute px-6 pt-6 pb-12 text-xl transform bg-white shadow-xl top-0 left-12 prod -rotate-6 mobileCard2">
@@ -94,7 +94,7 @@
                 </div> -->
                 <div
                     class="absolute px-6 pt-6 pb-20 text-xl transform bg-white  shadow-xl top-12 right-32 prod -rotate-6 mobileCard">
-                    <img src="images/making2.jpeg" class="mb-2 md:max-w-sm" alt="">
+                    <img src="images/making3.jpeg" class="mb-2 md:max-w-sm" alt="">
 
                 </div>
             </div>
@@ -196,7 +196,8 @@
                         Govt. of India).</p>
 
                 </div>
-                <p class="top-0 text-4xl font-bold lightBrown md:text-5xl satisfy pin2"></p>
+                <div class="max-w-sm px-4 pt-4 pb-12 bg-white pin2 transform -rotate-12"><img src="images/making1.jpg"
+                        alt=""></div>
 
 
 
@@ -242,7 +243,9 @@
                         Individuals who participate at exhibitions.
                     </p>
                 </div>
-                <p class="top-0 text-4xl font-bold lightBrown satisfy pin4 md:text-5xl"></p>
+                <div class="max-w-sm px-4 pt-4 pb-12 bg-white pin4 transform -rotate-12"><img src="images/making2.jpeg"
+                        alt=""></div>
+
 
 
             </div>
@@ -610,7 +613,7 @@
 
         story.from('.pin1', { rotate: 30, opacity: 0, onStart: () => whiteBar(), onReverseComplete: () => whiteBar() })
             .from('.story1', { x: 30, opacity: 0 }, '-=0.5')
-            .from('.pin2', { scale: 2, })
+            .from('.pin2', { rotate: 30, opacity: 0 })
             .from('.story2', { x: -30, opacity: 0 }, '-=0.5')
 
         function whiteBar() {
@@ -632,7 +635,7 @@
         })
         story2.from('.pin3', { opacity: 0, rotate: 30 },)
             .from('.story3', { x: 30, opacity: 0 }, '-=0.5')
-            .from('.pin4', { scale: 2 },)
+            .from('.pin4', { opacity: 0, rotate: 30 },)
             .from('.story4', { x: 30, opacity: 0 }, '-=0.5')
 
 
